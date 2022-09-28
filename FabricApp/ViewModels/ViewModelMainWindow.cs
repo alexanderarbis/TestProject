@@ -33,7 +33,7 @@ namespace FabricApp.ViewModels
         #endregion
 
         #region CurrentPage
-        private Page _Page = _Pages[3];
+        private Page _Page = _Pages[0];
         public Page Page
         {
             get => _Page;

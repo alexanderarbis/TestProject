@@ -5,11 +5,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Data;
+using System.Windows.Markup;
 
-namespace FabricApp.ViewModels
+namespace FabricApp.Converters
 {
-    internal class RoleConverter : IValueConverter
+    public class RoleConverter : MarkupExtension, IValueConverter
     {
+        RoleConverter _Instance;
         public object Convert(object value, Type targetType, object parameter, CultureInfo culture)
         {
             if ((int)value == 0)
@@ -29,6 +31,11 @@ namespace FabricApp.ViewModels
         public object ConvertBack(object value, Type targetType, object parameter, CultureInfo culture)
         {
             throw new NotImplementedException();
+        }
+
+        public override object ProvideValue(IServiceProvider serviceProvider)
+        {
+            return _Instance ?? new RoleConverter();
         }
     }
 }

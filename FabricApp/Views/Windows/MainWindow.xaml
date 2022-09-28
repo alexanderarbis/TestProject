@@ -5,16 +5,16 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:el="FabricApp.Views.Elements"
         xmlns:vm="clr-namespace:FabricApp.ViewModels"
-        xmlns:cv="clr-namespace:FabricApp.ViewModels"
+        xmlns:cv="clr-namespace:FabricApp.Converters"
         xmlns:local="clr-namespace:FabricApp"
         mc:Ignorable="d"
         
-        Title="{Binding Role, Converter = {StaticResource RoleConverter}, UpdateSourceTrigger = PropertyChanged}" 
+        Title="{Binding Role, Converter={cv:RoleConverter}}" 
         Height="855" 
         Width="1218"
         Background="#242424"
         ResizeMode="CanResize">
-
+    
     <Window.DataContext>
         <vm:ViewModelMainWindow/>
     </Window.DataContext>
