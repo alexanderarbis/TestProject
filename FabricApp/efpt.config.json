@@ -1,0 +1,93 @@
+﻿{
+   "CodeGenerationMode": 2,
+   "ContextClassName": "FabricContext",
+   "ContextNamespace": null,
+   "DefaultDacpacSchema": null,
+   "FilterSchemas": false,
+   "IncludeConnectionString": false,
+   "ModelNamespace": null,
+   "OutputContextPath": "Data",
+   "OutputPath": "Models",
+   "PreserveCasingWithRegex": true,
+   "ProjectRootNamespace": "FabricApp",
+   "Schemas": null,
+   "SelectedHandlebarsLanguage": 0,
+   "SelectedToBeGenerated": 0,
+   "Tables": [
+      {
+         "Name": "[dbo].[cloth_materials]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[cloths]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[furniture]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[furniture_types]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[materials]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[order_products]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[orders]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[product_cloths]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[product_furnitures]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[products]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[roles]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[users]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[warehouse_cloths]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[warehouse_furnitures]",
+         "ObjectType": 0
+      }
+   ],
+   "UiHint": "DESKTOP-8UOM60S.Fabric",
+   "UseBoolPropertiesWithoutDefaultSql": false,
+   "UseDatabaseNames": false,
+   "UseDbContextSplitting": true,
+   "UseFluentApiOnly": true,
+   "UseHandleBars": false,
+   "UseHierarchyId": false,
+   "UseInflector": true,
+   "UseLegacyPluralizer": false,
+   "UseManyToManyEntity": false,
+   "UseNoConstructor": false,
+   "UseNoDefaultConstructor": false,
+   "UseNoNavigations": false,
+   "UseNoObjectFilter": false,
+   "UseNodaTime": false,
+   "UseNullableReferences": false,
+   "UseSchemaFolders": false,
+   "UseSpatial": false,
+   "UseT4": false
+}

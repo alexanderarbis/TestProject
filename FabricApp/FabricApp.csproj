@@ -1,0 +1,45 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Views\Resources\Pictures\key.png" />
+    <None Remove="Views\Resources\Pictures\logo-01.jpg" />
+    <None Remove="Views\Resources\Pictures\logo-02.jpg" />
+    <None Remove="Views\Resources\Pictures\logo-03-white.png" />
+    <None Remove="Views\Resources\Pictures\logo-03.jpg" />
+    <None Remove="Views\Resources\Pictures\logo-04.jpg" />
+    <None Remove="Views\Resources\Pictures\user.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Models\" />
+    <Folder Include="ViewModels\DataBase\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="6.0.9">
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      <PrivateAssets>all</PrivateAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="6.0.9" />
+    <PackageReference Include="MvvmCross" Version="9.0.1" />
+    <PackageReference Include="MySqlConnector" Version="2.1.13" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Views\Resources\Pictures\key.png" />
+    <Resource Include="Views\Resources\Pictures\logo-01.jpg" />
+    <Resource Include="Views\Resources\Pictures\logo-02.jpg" />
+    <Resource Include="Views\Resources\Pictures\logo-03-white.png" />
+    <Resource Include="Views\Resources\Pictures\logo-03.jpg" />
+    <Resource Include="Views\Resources\Pictures\logo-04.jpg" />
+    <Resource Include="Views\Resources\Pictures\user.png" />
+  </ItemGroup>
+
+</Project>
